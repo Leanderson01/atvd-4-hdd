@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 50vh;
+}
+
+.sqd1 {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
+  height: 50vh;
+  background-color: #f53d1b;
+  border: 10px solid black;
+  color: #f53d1b;
 }
 
-.App-link {
-  color: #61dafb;
+.sqd2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+  background-color: #23de90;
+  border: 10px solid black;
+  color: #23de90;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.sqd3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+  background-color: #6d4cf5;
+  border: 10px solid black;
+  color: #6d4cf5;
+}
+
+.sqd4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+  background-color: #f5df27;
+  border: 10px solid black;
+  color: #f5df27;
+}
+
+@media (min-width: 150px) and (max-width: 414px) {
+  .container {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .sqd1 {
+    background-color: #f5df27;
+    color: #f5df27;
+  }
+
+  .sqd2 {
+    background-color: #6d4cf5;
+    color: #6d4cf5;
+  }
+
+  .sqd3 {
+    background-color: #23de90;
+    color: #23de90;
+  }
+
+  .sqd4 {
+    background-color: #f53d1b;
+    color: #f53d1b;
+  }
+}
+
+@media (max-width: 768px) {
+  .sqd1 {
+    background-color: #23de90;
+    color: #23de90;
+  }
+
+  .sqd2 {
+    background-color: #f53d1b;
+    color: #f53d1b;
+  }
+
+  .sqd3 {
+    background-color: #f5df27;
+    color: #f5df27;
+  }
+
+  .sqd4 {
+    background-color: #6d4cf5;
+    color: #6d4cf5;
   }
 }
